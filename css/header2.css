@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@300;600&display=swap");
+
+.header2-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.header2-nav .logo {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0dd4c0;
+  text-decoration: none;
+  font-family: "Kalam", cursive;
+}
+
+.header2-nav .logo > i {
+  font-size: 3.5rem;
+}
+
+.header2-nav .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.header2-nav .nav-links a {
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header2-nav .nav-links a::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  background-color: #0dd4c0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.header2-nav .nav-links a:hover,
+.header2-nav .nav-links a:focus {
+  color: #0dd4c0;
+}
+
+.header2-nav .nav-links a:hover::before,
+.header2-nav .nav-links a:focus::before {
+  transform: scaleX(1);
+}
+
+.header2-nav .book-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 1.3rem;
+  border: 2px solid #0dd4c0;
+  background-color: transparent;
+  border-radius: 50rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #0dd4c0;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header2-nav .book-btn > i {
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.header2-nav .book-btn:hover {
+  background: #0dd4c0;
+  color: #fff;
+}

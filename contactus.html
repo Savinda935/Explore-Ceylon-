@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contactus.css">
+  <link rel="shortcut icon" href="https://i.postimg.cc/LXkGGm9H/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="contact-page">
+<div id="header"></div>
+<main class="main-content">
+  <section class="hero contact-hero">
+    <div class="container">
+      <h2 class="h1 hero-title">Contact Us</h2>
+      <p class="hero-text">
+        We’d love to hear from you! Whether you have a question, feedback, or want to start planning your next adventure, our team is here to help. Reach out and let’s make your travel dreams a reality.
+      </p>
+    </div>
+  </section>
+<!-- Responsive Contact Page with Dark Mode and Form Validation (vanilla JS).
+
+*Designed & built for desktop and tablets with viewport width >= 720px and in landscape orientation.  -->
+
+
+
+
+
+
+
+  
+  <!-- Image credit: Oliver Sjöström https://www.pexels.com/photo/body-of-water-near-green-mountain-931018/  -->
+<script src="js/travelhome.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+fetch('components/header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+fetch('components/Footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
+</script>
+</main>
+<div id="footer"></div>
+</body>
+</html>
